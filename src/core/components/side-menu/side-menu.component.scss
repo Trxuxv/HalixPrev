@@ -1,0 +1,11 @@
+#sidemenu {
+    width: 200px;
+    position: absolute;
+    text-align: center;
+    left: -150px;
+    transition: transform 250ms;
+}
+
+#sidemenu:hover {
+    transform: translateX(150px);
+}

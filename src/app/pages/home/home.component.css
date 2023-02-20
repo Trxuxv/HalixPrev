@@ -1,0 +1,26 @@
+.mymo {
+    animation: pulse 3s ease infinite alternate, nudge 5s linear infinite alternate;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        background-color: #28e2d268;
+    }
+    50% {
+        background-color: #08aab03d;
+    }
+}
+
+@keyframes nudge {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(150px, 0);
+    }
+    80% {
+        transform: translate(10px, 0);
+    }
+}
