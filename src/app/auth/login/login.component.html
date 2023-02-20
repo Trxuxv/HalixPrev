@@ -1,3 +1,136 @@
-<div class="w-screen bg-red-200 h-screen">
-    aaa
+<div class="w-screen bg-slate-50 h-screen flex items-center justify-center relative overflow-hidden">
+    <div class="mymo absolute z-10 bg-teal-400" style="
+      width: 61%;
+      background: #2fc9b3;
+      height: 82%;
+      bottom: -25%;
+      border-radius: 120%;
+      right: -20%;
+    "></div>
+    <div class="mymo absolute z-10 bg-teal-400" style="
+      width: 40%;
+      background: #2fc9b3;
+      height: 58%;
+      top: -19%;
+      border-radius: 64% 59%;
+      right: -20%;
+    "></div>
+    <div class="mymo absolute z-10 bg-teal-400" style="
+      width: 20%;
+      background: #2fc9b3;
+      height: 27%;
+      top: 30%;
+      border-radius: 50%;
+      left: -20%;
+    "></div>
+    <div class="mymo absolute z-10 bg-teal-400" style="
+      width: 30%;
+      background: #2fc9b3;
+      height: 55%;
+      top: -19%;
+      border-radius: 50%;
+      left: -10%;
+    "></div>
+    <div class="w-9/12 h-4/5 shadow-2xl rounded-lg flex items-center justify-center overflow-hidden z-50">
+        <div class="w-3/6 flex flex-col bg-white h-full">
+            <div class="flex flex-col items-center justify-center px-6 mx-auto md:h-screen lg:py-0 w-full">
+                <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+                    <img class="w-8 h-8 mr-2" src="./../../../assets/icon/Halix.webp" alt="logo" /> HalixPrev
+                </a>
+                <div class="w-full bg-white rounded-lg dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+                    <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                        <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                            Sign in to your account
+                        </h1>
+                        <form class="space-y-4 md:space-y-6" action="#">
+                            <div>
+                                <label for="username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Username</label
+                >
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-slate-600 focus:border-slate-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="name@company.com"
+                  required=""
+                />
+              </div>
+              <div>
+                <label
+                  for="password"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="••••••••"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-slate-600 focus:border-slate-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  required=""
+                />
+              </div>
+              <div class="flex items-center justify-between">
+                <a
+                  href="#"
+                  class="text-sm font-medium text-slate-600 hover:underline dark:text-slate-500"
+                  >Forgot password?</a
+                >
+              </div>
+              <button
+                (click)="onSignIn()"
+                type="submit"
+                class="w-full text-white bg-slate-600 hover:bg-slate-700 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800"
+              >
+                Sign in
+              </button>
+              <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                Don’t have an account yet?
+                <a
+                  href="#"
+                  class="font-medium text-slate-600 hover:underline dark:text-slate-500"
+                  >Sign up</a
+                >
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-4/5 h-full bg-slate-700 flex items-center flex-col relative overflow-hidden"
+    >
+      <div class="w-24 h-24 bg-teal-400 rounded-full absolute right-0"></div>
+      <div class="w-8 h-8 bg-teal-400 rounded-full absolute left-0"></div>
+      <div class="w-12 h-12 bg-teal-400 rounded-full absolute left-10"></div>
+      <div class="w-6 h-6 bg-teal-400 rounded-full absolute left-24"></div>
+      <div class="w-24 h-24 bg-teal-400 rounded-full absolute right-0"></div>
+      <div
+        class="w-36 h-36 bg-teal-400 rounded-full absolute top-24 right-20"
+      ></div>
+      <div
+        class="w-96 h-96 bg-teal-400 rounded-full absolute bottom-24 left-20"
+      ></div>
+      <div
+        class="w-24 h-24 bg-teal-400 rounded-full absolute right-0 bottom-0"
+      ></div>
+      <div
+        class="w-16 h-16 bg-teal-400 rounded-full absolute right-48 bottom-72"
+      ></div>
+      <div
+        class="w-48 h-48 bg-teal-400 rounded-full absolute right-24 bottom-24"
+      ></div>
+      <div
+        class="w-56 h-56 bg-teal-400 rounded-full absolute"
+        style="bottom: -7%; left: -5%"
+      ></div>
+      <div
+        class="z-50 text-white text-6xl font-bold text-left h-3/6 w-3/5 flex items-center left-20 absolute"
+      >
+        <p> Welcome to <span class="text-7xl ml-10 flex items-center justify-center">HalixPrev <img class="w-16 ml-2 mt-4" src="./../../../assets/icon/Halix.webp" alt=""></span> </p>
+      </div>
+      <div class="z-50">Your self manager!!!!</div>
+      <!-- <img src="./../../../assets/vectors/undraw_slider_re_ch7w.svg" class="py-12 bg-white rounded-full mx-auto h-5/6" alt=" "> -->
+    </div>
+  </div>
 </div>

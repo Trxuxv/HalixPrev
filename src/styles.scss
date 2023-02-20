@@ -3,3 +3,46 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+.mymo {
+    animation: pulse 10s ease infinite alternate, nudge-invert 10s linear infinite alternate;
+}
+
+.mymo-invert {
+    animation: nudge-invert 3s linear infinite alternate;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        background-color: #28e2d268;
+    }
+    50% {
+        background-color: #08aab03d;
+    }
+}
+
+@keyframes nudge {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(150px, 0);
+    }
+    80% {
+        transform: translate(10px, 0);
+    }
+}
+
+@keyframes nudge-invert {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-50px, 10px);
+    }
+    80% {
+        transform: translate(-10px, 100px);
+    }
+}
