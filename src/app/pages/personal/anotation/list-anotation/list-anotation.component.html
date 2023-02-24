@@ -1,4 +1,4 @@
-<div class="flex w-full">
+<div class="flex w-5/6 mx-auto">
     <p *ngFor="let item of anotationList; index as i;" class="m-1 w-1/4 min-w-max flex items-center justify-center rounded-md bg-white cursor-pointer shadow-md py-4 px-3 text-sm ">
         {{item.title}}
         <svg (click)="onEdit(item.id) " xmlns="http://www.w3.org/2000/svg " fill="none " viewBox="0 0 24 24 " stroke-width="1.5 " stroke="currentColor " class="w-6 h-6 bg-slate-200 rounded-full p-1 ml-2 shadow-md ">

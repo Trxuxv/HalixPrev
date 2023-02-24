@@ -1,8 +1,12 @@
-<div class="w-full bg-white shadow-md rounded-md p-2 flex flex-col">
-    <div class="text-2xl font-bold p-2 text-slate-600">{{anotation.title}} </div>
+<div class="w-5/6 bg-white shadow-md rounded-md p-2 flex flex-col mx-auto">
+    <div class="text-2xl font-bold p-2 text-slate-600">{{ anotation.title }}</div>
     <div class="flex w-full">
-        <div class="w-1/2 text-justify p-2 font-normal text-slate-700">
-            {{anotation.content}}
+        <div [ngClass]="
+        anotation.content.length > 4500
+          ? 'text-justify p-2 font-normal text-slate-700 h-5/6 columns-1 text-sm'
+          : 'text-justify p-2 font-normal text-slate-700 h-5/6 columns-2 text-sm'
+      ">
+            {{ anotation.content }}
         </div>
     </div>
 </div>
