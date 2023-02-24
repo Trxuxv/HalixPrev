@@ -24,4 +24,8 @@ export class SideMenuComponent implements OnInit {
     }
   }
 
+  onAnotation(){
+    this.router.navigate(['/information/anotation']);
+  }
+
 }
